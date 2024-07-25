@@ -8,25 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		1927CB342C4E90C20039A5B8 /* MeetlyIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927CB332C4E90C20039A5B8 /* MeetlyIOSApp.swift */; };
-		1927CB362C4E90C20039A5B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927CB352C4E90C20039A5B8 /* ContentView.swift */; };
 		1927CB382C4E90C20039A5B8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927CB372C4E90C20039A5B8 /* Item.swift */; };
 		1927CB3A2C4E90C40039A5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1927CB392C4E90C40039A5B8 /* Assets.xcassets */; };
 		1927CB3D2C4E90C40039A5B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1927CB3C2C4E90C40039A5B8 /* Preview Assets.xcassets */; };
 		1927CB442C4E918B0039A5B8 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927CB432C4E918B0039A5B8 /* HomePage.swift */; };
 		1927CB462C4ED8230039A5B8 /* DiscoverEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927CB452C4ED8230039A5B8 /* DiscoverEventsView.swift */; };
 		1927CB482C4ED8B20039A5B8 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927CB472C4ED8B20039A5B8 /* CreateEventView.swift */; };
+		19E4F1012C519F0500085B24 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E4F1002C519F0500085B24 /* SignView.swift */; };
+		19FEF3CA2C4FE77400249447 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 19FEF3C92C4FE77400249447 /* Alamofire */; };
+		19FEF3CE2C4FE7E400249447 /* HttpTypea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEF3CD2C4FE7E400249447 /* HttpTypea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1927CB302C4E90C20039A5B8 /* MeetlyIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetlyIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1927CB332C4E90C20039A5B8 /* MeetlyIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetlyIOSApp.swift; sourceTree = "<group>"; };
-		1927CB352C4E90C20039A5B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1927CB372C4E90C20039A5B8 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1927CB392C4E90C40039A5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1927CB3C2C4E90C40039A5B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1927CB432C4E918B0039A5B8 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		1927CB452C4ED8230039A5B8 /* DiscoverEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverEventsView.swift; sourceTree = "<group>"; };
 		1927CB472C4ED8B20039A5B8 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
+		19E4F0FF2C519EEA00085B24 /* MeetlyIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeetlyIOS.entitlements; sourceTree = "<group>"; };
+		19E4F1002C519F0500085B24 /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
+		19FEF3CD2C4FE7E400249447 /* HttpTypea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTypea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19FEF3CA2C4FE77400249447 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,13 +64,15 @@
 		1927CB322C4E90C20039A5B8 /* MeetlyIOS */ = {
 			isa = PBXGroup;
 			children = (
+				19E4F1002C519F0500085B24 /* SignView.swift */,
+				1927CB392C4E90C40039A5B8 /* Assets.xcassets */,
+				19E4F0FF2C519EEA00085B24 /* MeetlyIOS.entitlements */,
 				1927CB332C4E90C20039A5B8 /* MeetlyIOSApp.swift */,
-				1927CB352C4E90C20039A5B8 /* ContentView.swift */,
 				1927CB372C4E90C20039A5B8 /* Item.swift */,
 				1927CB432C4E918B0039A5B8 /* HomePage.swift */,
 				1927CB452C4ED8230039A5B8 /* DiscoverEventsView.swift */,
 				1927CB472C4ED8B20039A5B8 /* CreateEventView.swift */,
-				1927CB392C4E90C40039A5B8 /* Assets.xcassets */,
+				19FEF3CD2C4FE7E400249447 /* HttpTypea.swift */,
 				1927CB3B2C4E90C40039A5B8 /* Preview Content */,
 			);
 			path = MeetlyIOS;
@@ -95,6 +102,9 @@
 			dependencies = (
 			);
 			name = MeetlyIOS;
+			packageProductDependencies = (
+				19FEF3C92C4FE77400249447 /* Alamofire */,
+			);
 			productName = MeetlyIOS;
 			productReference = 1927CB302C4E90C20039A5B8 /* MeetlyIOS.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 1927CB272C4E90C20039A5B8;
+			packageReferences = (
+				19FEF3C82C4FE77400249447 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 1927CB312C4E90C20039A5B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,10 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1927CB362C4E90C20039A5B8 /* ContentView.swift in Sources */,
+				19FEF3CE2C4FE7E400249447 /* HttpTypea.swift in Sources */,
 				1927CB462C4ED8230039A5B8 /* DiscoverEventsView.swift in Sources */,
 				1927CB382C4E90C20039A5B8 /* Item.swift in Sources */,
 				1927CB482C4ED8B20039A5B8 /* CreateEventView.swift in Sources */,
+				19E4F1012C519F0500085B24 /* SignView.swift in Sources */,
 				1927CB342C4E90C20039A5B8 /* MeetlyIOSApp.swift in Sources */,
 				1927CB442C4E918B0039A5B8 /* HomePage.swift in Sources */,
 			);
@@ -285,10 +299,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MeetlyIOS/MeetlyIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MeetlyIOS/Preview Content\"";
-				DEVELOPMENT_TEAM = 4YN9Y656UY;
+				DEVELOPMENT_TEAM = N67RB227UH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -301,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.MeetlyIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.MeetlyIOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,10 +329,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MeetlyIOS/MeetlyIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MeetlyIOS/Preview Content\"";
-				DEVELOPMENT_TEAM = 4YN9Y656UY;
+				DEVELOPMENT_TEAM = N67RB227UH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -330,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.MeetlyIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.MeetlyIOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -360,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19FEF3C82C4FE77400249447 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19FEF3C92C4FE77400249447 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19FEF3C82C4FE77400249447 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1927CB282C4E90C20039A5B8 /* Project object */;
 }

@@ -6,11 +6,40 @@
 //
 
 import SwiftUI
-
+import Alamofire
 struct DiscoverEventsView: View {
+    @State var events: Array<Event> = []
+    
     var body: some View {
         List {
-            Text("g")
+            ForEach(events) { event in
+                VStack(alignment: .leading, spacing: 3) {
+                           Text(event.title)
+                               .foregroundColor(.primary)
+                               .font(.headline)
+                           HStack(spacing: 3) {
+                               Label(event.desc, systemImage: "text").truncationMode(.tail)
+                           }
+                           .foregroundColor(.secondary)
+                           .font(.subheadline)
+                       }
+            }
+        }.onAppear {
+            withAnimation {
+                var _ = AF.request("http://localhost:3000/discover_events").responseDecodable(of: DiscoverResponse.self) { response in
+                    if case .success(let r) = response.result {
+                        events = r.resp
+                    }
+                }
+            }
+        } .refreshable {
+            withAnimation {
+                var _ = AF.request("http://localhost:3000/discover_events").responseDecodable(of: DiscoverResponse.self) { response in
+                    if case .success(let r) = response.result {
+                        events = r.resp
+                    }
+                }
+            }
         }
     }
 }

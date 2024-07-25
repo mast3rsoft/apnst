@@ -30,7 +30,8 @@ struct MeetlyIOSApp: App {
 //        }
 //        .modelContainer(sharedModelContainer)
         WindowGroup {
-            HomePage()
+           // HomePage()
+            SignView()
         }
     }
 }
