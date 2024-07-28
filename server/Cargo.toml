@@ -15,3 +15,6 @@ serde = {version = "*", features = ["derive"]}
 futures = "*"
 jsonwebtoken = "9"
 reqwest = { version = "0.12", features = ["json"] }
+axum-auth = "*"
+chrono = "0.4.38"
+rand = "0.8.5"
