@@ -17,8 +17,15 @@ struct DiscoverEventsView: View {
                            Text(event.title)
                                .foregroundColor(.primary)
                                .font(.headline)
-                           HStack(spacing: 3) {
-                               Label(event.desc, systemImage: "text").truncationMode(.tail)
+                    HStack {
+                               Label(event.desc, systemImage: "text.justify.leading").truncationMode(.tail)
+                                Spacer()
+                               Button(action: {
+                                   
+                               }) {
+                                   Image(systemName: "check").foregroundStyle(.blue).font(.headline)
+
+                               }.frame(alignment: .trailing)
                            }
                            .foregroundColor(.secondary)
                            .font(.subheadline)

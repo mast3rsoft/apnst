@@ -13,6 +13,10 @@ struct Event: Decodable, Identifiable, Encodable {
     var desc: String
     var `public`: Bool
 }
+struct AppleIDSignInResponse: Decodable {
+    var server_jwt: String
+    var refresh_token: String
+}
 struct DiscoverResponse: Decodable {
     var resp: Array<Event>
 }
@@ -22,6 +26,13 @@ struct CreateEventPost: Encodable {
 struct LogInWithJwt: Encodable, Decodable {
     var jwt: String
     var givenName: String?
+    var user: String
     var familyName: String?
     var email: String?
+}
+struct RefreshToken: Encodable, Decodable {
+    var refresh_token: String
+}
+struct RefreshTokenResponse: Encodable, Decodable {
+    var server_jwk_token: String
 }

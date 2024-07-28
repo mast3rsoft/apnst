@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomePage: View {
+    var jwtToken = ""
     @State private var selectedTab = "MYEVENTS"
     private func addItme() {
         print("Yay! I am A ")
@@ -35,7 +36,7 @@ struct HomePage: View {
                     if selectedTab == "MYEVENTS" {
                         ToolbarItem(placement: .automatic) {
                             NavigationLink {
-                                CreateEventView()
+                                CreateEventView(jwtToken: jwtToken)
                             } label: {
                                 Label("", systemImage: "plus")
                             }
